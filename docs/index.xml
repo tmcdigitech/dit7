@@ -72,6 +72,16 @@ squares = [0, 1, 4, 9, 16, 25, 36] vowels = [&amp;#34;a&amp;#34;, &amp;#34;e&amp
     </item>
     
     <item>
+      <title>On-off lamp</title>
+      <link>https://tmcdigitech.github.io/gemma/projectIdeas/onOffLamp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tmcdigitech.github.io/gemma/projectIdeas/onOffLamp/</guid>
+      <description>This example shows the basics of a state machine, also known by the more technical term finite state automaton. The idea is that the program is in a particular state, and certain events will cause a transition to another state.
+In our case, our light is either on or off (the states), and we will transition between them with a big enough vibration reading. Here is a state diagram of this:</description>
+    </item>
+    
+    <item>
       <title>parameter</title>
       <link>https://tmcdigitech.github.io/gemma/glossary/parameter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
