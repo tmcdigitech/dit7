@@ -93,7 +93,7 @@ In our case, our light is either on or off (the states), and we will transition 
         }
     },
     "url" : "https:\/\/tmcdigitech.github.io\/gemma\/projectIdeas\/onOffLamp\/",
-    "wordCount" : "515",
+    "wordCount" : "553",
     "genre" : [ ]
 }
 </script>
@@ -983,9 +983,20 @@ We&rsquo;ll break it down below.</p>
 </span><span class="lnt">74
 </span><span class="lnt">75
 </span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span><span class="lnt">82
+</span><span class="lnt">83
+</span><span class="lnt">84
+</span><span class="lnt">85
+</span><span class="lnt">86
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Import libraries</span>
+<span class="c1"># Import libraries</span>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">neopixel</span>
 <span class="kn">import</span> <span class="nn">adafruit_dotstar</span>
@@ -1021,6 +1032,9 @@ We&rsquo;ll break it down below.</p>
 <span class="c1"># Counter to keep track of when the ready flag should be set</span>
 <span class="n">readyCounter</span> <span class="o">=</span> <span class="mi">0</span>
 
+<span class="c1"># Counter to print vibration value</span>
+<span class="n">printCounter</span> <span class="o">=</span> <span class="mi">0</span>
+
 <span class="c1"># Event loop</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="c1"># Do code matching the current state, whether OFF or ON</span>
@@ -1029,6 +1043,7 @@ We&rsquo;ll break it down below.</p>
         <span class="n">pixels</span><span class="o">.</span><span class="n">fill</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
 
         <span class="c1"># check for events which cause transition from this state</span>
+        <span class="n">vibration</span> <span class="o">=</span> <span class="n">get_voltage</span><span class="p">(</span><span class="n">vibrationPin</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">vibration</span> <span class="o">&lt;</span> <span class="mf">0.8</span> <span class="ow">and</span> <span class="n">ready</span><span class="p">:</span>
             <span class="c1"># do anything we need to exit this state</span>
 
@@ -1061,6 +1076,11 @@ We&rsquo;ll break it down below.</p>
         <span class="c1"># If zero, we&#39;re &#34;ready&#34;</span>
         <span class="k">if</span> <span class="n">readyCounter</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="n">ready</span> <span class="o">=</span> <span class="kc">True</span>
+    
+    <span class="k">if</span> <span class="n">printCounter</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">ready</span><span class="p">,</span> <span class="n">vibration</span><span class="p">)</span>
+    
+    <span class="n">printCounter</span> <span class="o">=</span> <span class="p">(</span><span class="n">printCounter</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="mi">10</span>
 </code></pre></td></tr></table>
 </div>
 </div>
