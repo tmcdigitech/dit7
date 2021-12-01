@@ -63,8 +63,12 @@ ready = True
 # Counter to keep track of when the ready flag should be set
 readyCounter = 0
 
+# Counter to print vibration value
+printCounter = 0
+
 # Event loop
 while True:
+    vibration = get_voltage(vibrationPin)
     # Do code matching the current state, whether OFF or ON
     if state == OFF:
         # ensure light off
@@ -75,7 +79,7 @@ while True:
             # do anything we need to exit this state
 
             # change state for next iteration of the loop
-            state == ON
+            state = ON
 
             # do anything we need to enter new state
             
@@ -91,7 +95,7 @@ while True:
     
         # check for events
         if vibration < 0.8 and ready:
-            state == OFF
+            state = OFF
             ready = False
             readyCounter = 100
     
@@ -103,5 +107,10 @@ while True:
         # If zero, we're "ready"
         if readyCounter == 0:
             ready = True
+    
+    if printCounter == 0:
+        print(state, ready, vibration)
+    
+    printCounter = (printCounter + 1) % 10
 ```
 
