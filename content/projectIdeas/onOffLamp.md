@@ -27,6 +27,27 @@ Here is the complete code with several comments included.
 We'll break it down below.
 
 ```python {linenos=table}
+# Import libraries
+import time
+import neopixel
+import adafruit_dotstar
+import pulseio
+from analogio import AnalogIn
+import board
+
+# Set up neopixel light strip
+pixpin = board.D0
+numpix = 3
+pixels = neopixel.NeoPixel(pixpin, numpix, brightness = 0.5, auto_write=True, pixel_order=neopixel.GRBW)
+
+# Built-in RGB light
+dotstar = adafruit_dotstar.DotStar(board.APA102_SCK, board.APA102_MOSI, 1)
+
+vibrationPin = AnalogIn(board.A0)
+
+def get_voltage(pin):
+    return (pin.value * 3.3) / 65536
+
 # A list of all the states, each uniquely numbered
 # (not important what the numbers are,
 # as long as they're unique)
