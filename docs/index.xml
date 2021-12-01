@@ -28,6 +28,15 @@ Here is an example. In this case, you can see in the flowchart below that we wil
     </item>
     
     <item>
+      <title></title>
+      <link>https://tmcdigitech.github.io/gemma/projectIdeas/bikeLight/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tmcdigitech.github.io/gemma/projectIdeas/bikeLight/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>argument</title>
       <link>https://tmcdigitech.github.io/gemma/glossary/argument/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -46,6 +55,15 @@ When defining a function, the pieces of information that the function takes to d
       <guid>https://tmcdigitech.github.io/gemma/glossary/color/</guid>
       <description>In almost all programming, American spellings are used. So as programmers we use colors, even though we would normally spell the word colours.
 Colors are slightly different on the Gemma from most other programming environments. For most programming, colors are described by the amount of red, green, and blue light to emit. These numbers are normally in the range 0 to 255. In Python, we list these as a tuple (red, green, blue), such as:</description>
+    </item>
+    
+    <item>
+      <title>Cycling colours</title>
+      <link>https://tmcdigitech.github.io/gemma/projectIdeas/cyclingColours/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tmcdigitech.github.io/gemma/projectIdeas/cyclingColours/</guid>
+      <description>import time import neopixel import adafruit_dotstar import pulseio from analogio import AnalogIn import board pixpin = board.D0 numpix = 3 pixels = neopixel.NeoPixel(pixpin, numpix, brightness = 0.5, auto_write=True, pixel_order=neopixel.GRBW) dotstar = adafruit_dotstar.DotStar(board.APA102_SCK, board.APA102_MOSI, 1) vibrationPin = AnalogIn(board.A0) def get_voltage(pin): return (pin.value * 3.3) / 65536 # Named colours RED = (255, 0 , 0, 0) BLUE = (0, 0, 255, 0) GREEN = (0, 255, 0, 0) OFF = (0, 0, 0, 0) # List of colours to cycle through colours = [RED, GREEN, BLUE, (255,0,255)] # Index of which colour in the list we&amp;#39;re on coloursIndex = 0 # Timer for when to print the vibration sensor value printTimer = 0 # Timer to make sure that we wait # for one vibration to have stopped # before we check for the next debounce = 0 # Timer for changing colours if we&amp;#39;re on colourTimer = 0 # Whether the light is on or not on = False # Turn lights off to start pixels.</description>
     </item>
     
     <item>

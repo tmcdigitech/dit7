@@ -10,11 +10,11 @@
 
 
 
-    <meta name="description" content="TMC - Gemma">
+    <meta name="description" content="import time import neopixel import adafruit_dotstar import pulseio from analogio import AnalogIn import board pixpin = board.D0 numpix = 3 pixels = neopixel.NeoPixel(pixpin, numpix, brightness = 0.5, auto_write=True, pixel_order=neopixel.GRBW) dotstar = adafruit_dotstar.DotStar(board.APA102_SCK, board.APA102_MOSI, 1) vibrationPin = AnalogIn(board.A0) def get_voltage(pin): return (pin.value * 3.3) / 65536 # Named colours RED = (255, 0 , 0, 0) BLUE = (0, 0, 255, 0) GREEN = (0, 255, 0, 0) OFF = (0, 0, 0, 0) # List of colours to cycle through colours = [RED, GREEN, BLUE, (255,0,255)] # Index of which colour in the list we&#39;re on coloursIndex = 0 # Timer for when to print the vibration sensor value printTimer = 0 # Timer to make sure that we wait # for one vibration to have stopped # before we check for the next debounce = 0 # Timer for changing colours if we&#39;re on colourTimer = 0 # Whether the light is on or not on = False # Turn lights off to start pixels.">
 
 
 
-    <title>Categories | TMC - Gemma</title>
+    <title>Cycling colours | TMC - Gemma</title>
 
     <link rel="icon" type="image/svg+xml" href="/gemma/favicon/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/gemma/favicon/favicon-32x32.png">
@@ -22,15 +22,17 @@
 
     
 
-    <meta property="og:title" content="Categories" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://tmcdigitech.github.io/gemma/categories/" />
+    <meta property="og:title" content="Cycling colours" />
+<meta property="og:description" content="import time import neopixel import adafruit_dotstar import pulseio from analogio import AnalogIn import board pixpin = board.D0 numpix = 3 pixels = neopixel.NeoPixel(pixpin, numpix, brightness = 0.5, auto_write=True, pixel_order=neopixel.GRBW) dotstar = adafruit_dotstar.DotStar(board.APA102_SCK, board.APA102_MOSI, 1) vibrationPin = AnalogIn(board.A0) def get_voltage(pin): return (pin.value * 3.3) / 65536 # Named colours RED = (255, 0 , 0, 0) BLUE = (0, 0, 255, 0) GREEN = (0, 255, 0, 0) OFF = (0, 0, 0, 0) # List of colours to cycle through colours = [RED, GREEN, BLUE, (255,0,255)] # Index of which colour in the list we&#39;re on coloursIndex = 0 # Timer for when to print the vibration sensor value printTimer = 0 # Timer to make sure that we wait # for one vibration to have stopped # before we check for the next debounce = 0 # Timer for changing colours if we&#39;re on colourTimer = 0 # Whether the light is on or not on = False # Turn lights off to start pixels." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://tmcdigitech.github.io/gemma/projectIdeas/cyclingColours/" /><meta property="article:section" content="projectIdeas" />
+
+
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Categories"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Cycling colours"/>
+<meta name="twitter:description" content="import time import neopixel import adafruit_dotstar import pulseio from analogio import AnalogIn import board pixpin = board.D0 numpix = 3 pixels = neopixel.NeoPixel(pixpin, numpix, brightness = 0.5, auto_write=True, pixel_order=neopixel.GRBW) dotstar = adafruit_dotstar.DotStar(board.APA102_SCK, board.APA102_MOSI, 1) vibrationPin = AnalogIn(board.A0) def get_voltage(pin): return (pin.value * 3.3) / 65536 # Named colours RED = (255, 0 , 0, 0) BLUE = (0, 0, 255, 0) GREEN = (0, 255, 0, 0) OFF = (0, 0, 0, 0) # List of colours to cycle through colours = [RED, GREEN, BLUE, (255,0,255)] # Index of which colour in the list we&#39;re on coloursIndex = 0 # Timer for when to print the vibration sensor value printTimer = 0 # Timer to make sure that we wait # for one vibration to have stopped # before we check for the next debounce = 0 # Timer for changing colours if we&#39;re on colourTimer = 0 # Whether the light is on or not on = False # Turn lights off to start pixels."/>
 
 
     <script src="/gemma/js/darkmode-ce906ea916.min.js"></script>
@@ -55,6 +57,44 @@
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
     
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "TechArticle",
+    "articleSection": "projectIdeas",
+    "name": "Cycling colours",
+    "headline": "Cycling colours",
+    "alternativeHeadline": "",
+    "description": "import time import neopixel import adafruit_dotstar import pulseio from analogio import AnalogIn import board pixpin = board.D0 numpix = 3 pixels = neopixel.NeoPixel(pixpin, numpix, brightness = 0.5, auto_write=True, pixel_order=neopixel.GRBW) dotstar = adafruit_dotstar.DotStar(board.APA102_SCK, board.APA102_MOSI, 1) vibrationPin = AnalogIn(board.A0) def get_voltage(pin): return (pin.value * 3.3) \/ 65536 # Named colours RED = (255, 0 , 0, 0) BLUE = (0, 0, 255, 0) GREEN = (0, 255, 0, 0) OFF = (0, 0, 0, 0) # List of colours to cycle through colours = [RED, GREEN, BLUE, (255,0,255)] # Index of which colour in the list we\u0026#39;re on coloursIndex = 0 # Timer for when to print the vibration sensor value printTimer = 0 # Timer to make sure that we wait # for one vibration to have stopped # before we check for the next debounce = 0 # Timer for changing colours if we\u0026#39;re on colourTimer = 0 # Whether the light is on or not on = False # Turn lights off to start pixels.",
+    "inLanguage": "en",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/tmcdigitech.github.io\/gemma\/projectIdeas\/cyclingColours\/"
+    },
+    "copyrightHolder" : "TMC - Gemma",
+    "copyrightYear" : "0001",
+    "dateCreated": "0001-01-01T00:00:00.00Z",
+    "datePublished": "0001-01-01T00:00:00.00Z",
+    "dateModified": "0001-01-01T00:00:00.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "TMC - Gemma",
+        "url": "https://tmcdigitech.github.io/gemma/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/tmcdigitech.github.io\/gemma\/brand.svg",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "url" : "https:\/\/tmcdigitech.github.io\/gemma\/projectIdeas\/cyclingColours\/",
+    "wordCount" : "247",
+    "genre" : [ ]
+}
+</script>
+
 
     
 
@@ -194,7 +234,7 @@
             
             
                 <span class="flex">
-                    <a href="/gemma/projectIdeas/cyclingColours/" class="gdoc-nav__entry ">
+                    <a href="/gemma/projectIdeas/cyclingColours/" class="gdoc-nav__entry is-active">
                         Cycling colours
                     </a>
                 </span>
@@ -783,6 +823,137 @@
             <div class="gdoc-page">
                 
     
+
+
+    
+
+
+
+
+
+
+<div class="gdoc-page__header flex flex-wrap
+     justify-between 
+     hidden-mobile 
+    " itemprop="breadcrumb">
+    
+    <div>
+        <svg class="icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"></use></svg>
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            
+            
+            
+            
+    
+    
+        
+        
+        
+        
+    
+    
+        
+        
+        
+        
+    
+    
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/gemma/' href='/gemma/'><span itemprop='name'>7 DigiTech</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/gemma/projectIdeas/' href='/gemma/projectIdeas/'><span itemprop='name'>Project ideas</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Cycling colours</span><meta itemprop='position' content='4' /></li>
+    
+
+    
+
+    
+
+        </ol>
+    </div>
+    
+    
+</div>
+
+
+    <article class="gdoc-markdown gdoc-markdown__align--left">
+        <h1>Cycling colours</h1>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">neopixel</span>
+<span class="kn">import</span> <span class="nn">adafruit_dotstar</span>
+<span class="kn">import</span> <span class="nn">pulseio</span>
+<span class="kn">from</span> <span class="nn">analogio</span> <span class="kn">import</span> <span class="n">AnalogIn</span>
+<span class="kn">import</span> <span class="nn">board</span>
+
+<span class="n">pixpin</span> <span class="o">=</span> <span class="n">board</span><span class="o">.</span><span class="n">D0</span>
+<span class="n">numpix</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">pixels</span> <span class="o">=</span> <span class="n">neopixel</span><span class="o">.</span><span class="n">NeoPixel</span><span class="p">(</span><span class="n">pixpin</span><span class="p">,</span> <span class="n">numpix</span><span class="p">,</span> <span class="n">brightness</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">auto_write</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">pixel_order</span><span class="o">=</span><span class="n">neopixel</span><span class="o">.</span><span class="n">GRBW</span><span class="p">)</span>
+
+<span class="n">dotstar</span> <span class="o">=</span> <span class="n">adafruit_dotstar</span><span class="o">.</span><span class="n">DotStar</span><span class="p">(</span><span class="n">board</span><span class="o">.</span><span class="n">APA102_SCK</span><span class="p">,</span> <span class="n">board</span><span class="o">.</span><span class="n">APA102_MOSI</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">vibrationPin</span> <span class="o">=</span> <span class="n">AnalogIn</span><span class="p">(</span><span class="n">board</span><span class="o">.</span><span class="n">A0</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">get_voltage</span><span class="p">(</span><span class="n">pin</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">pin</span><span class="o">.</span><span class="n">value</span> <span class="o">*</span> <span class="mf">3.3</span><span class="p">)</span> <span class="o">/</span> <span class="mi">65536</span>
+
+<span class="c1"># Named colours</span>
+<span class="n">RED</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span> <span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">BLUE</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">GREEN</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">OFF</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># List of colours to cycle through</span>
+<span class="n">colours</span> <span class="o">=</span> <span class="p">[</span><span class="n">RED</span><span class="p">,</span> <span class="n">GREEN</span><span class="p">,</span> <span class="n">BLUE</span><span class="p">,</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">)]</span>
+
+<span class="c1"># Index of which colour in the list we&#39;re on</span>
+<span class="n">coloursIndex</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># Timer for when to print the vibration sensor value</span>
+<span class="n">printTimer</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># Timer to make sure that we wait</span>
+<span class="c1"># for one vibration to have stopped</span>
+<span class="c1"># before we check for the next</span>
+<span class="n">debounce</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># Timer for changing colours if we&#39;re on</span>
+<span class="n">colourTimer</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># Whether the light is on or not</span>
+<span class="n">on</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="c1"># Turn lights off to start</span>
+<span class="n">pixels</span><span class="o">.</span><span class="n">fill</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">dotstar</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">printTimer</span><span class="p">)</span>
+    <span class="n">vibration</span> <span class="o">=</span> <span class="n">get_voltage</span><span class="p">(</span><span class="n">vibrationPin</span><span class="p">)</span>
+
+    <span class="c1"># Check the timers and reset them if they&#39;ve gone off</span>
+    <span class="k">if</span> <span class="n">printTimer</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">printTimer</span> <span class="o">=</span> <span class="mi">255</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">vibration</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">colourTimer</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">colourTimer</span> <span class="o">=</span> <span class="mi">255</span>
+        <span class="n">coloursIndex</span> <span class="o">=</span> <span class="p">(</span><span class="n">coloursIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="nb">len</span><span class="p">(</span><span class="n">colours</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">on</span><span class="p">:</span>
+            <span class="n">pixels</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">colours</span><span class="p">[</span><span class="n">coloursIndex</span><span class="p">])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">pixels</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">OFF</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">debounce</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">vibration</span> <span class="o">&lt;</span> <span class="mf">0.8</span><span class="p">:</span>
+        <span class="n">debounce</span> <span class="o">=</span> <span class="mi">255</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">vibration</span><span class="p">)</span>
+        <span class="n">on</span> <span class="o">=</span> <span class="ow">not</span> <span class="n">on</span>
+        <span class="k">if</span> <span class="n">on</span><span class="p">:</span>
+            <span class="n">pixels</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">colours</span><span class="p">[</span><span class="n">coloursIndex</span><span class="p">])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">pixels</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">OFF</span><span class="p">)</span>
+
+
+    <span class="n">printTimer</span> <span class="o">-=</span> <span class="mi">1</span>
+    <span class="n">colourTimer</span> <span class="o">-=</span> <span class="mi">1</span>
+    <span class="n">debounce</span> <span class="o">-=</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">debounce</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">debounce</span> <span class="o">=</span> <span class="mi">0</span>
+</code></pre></div>
+    </article>
 
                 
 

@@ -93,7 +93,7 @@ In our case, our light is either on or off (the states), and we will transition 
         }
     },
     "url" : "https:\/\/tmcdigitech.github.io\/gemma\/projectIdeas\/onOffLamp\/",
-    "wordCount" : "436",
+    "wordCount" : "515",
     "genre" : [ ]
 }
 </script>
@@ -203,6 +203,50 @@ In our case, our light is either on or off (the states), and we will transition 
 
     <ul class="gdoc-nav__list">
         
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">Bike Light</span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/gemma/projectIdeas/cyclingColours/" class="gdoc-nav__entry ">
+                        Cycling colours
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
             
             
 
@@ -918,9 +962,51 @@ We&rsquo;ll break it down below.</p>
 </span><span class="lnt">53
 </span><span class="lnt">54
 </span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># A list of all the states, each uniquely numbered</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Import libraries</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">neopixel</span>
+<span class="kn">import</span> <span class="nn">adafruit_dotstar</span>
+<span class="kn">import</span> <span class="nn">pulseio</span>
+<span class="kn">from</span> <span class="nn">analogio</span> <span class="kn">import</span> <span class="n">AnalogIn</span>
+<span class="kn">import</span> <span class="nn">board</span>
+
+<span class="c1"># Set up neopixel light strip</span>
+<span class="n">pixpin</span> <span class="o">=</span> <span class="n">board</span><span class="o">.</span><span class="n">D0</span>
+<span class="n">numpix</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">pixels</span> <span class="o">=</span> <span class="n">neopixel</span><span class="o">.</span><span class="n">NeoPixel</span><span class="p">(</span><span class="n">pixpin</span><span class="p">,</span> <span class="n">numpix</span><span class="p">,</span> <span class="n">brightness</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">auto_write</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">pixel_order</span><span class="o">=</span><span class="n">neopixel</span><span class="o">.</span><span class="n">GRBW</span><span class="p">)</span>
+
+<span class="c1"># Built-in RGB light</span>
+<span class="n">dotstar</span> <span class="o">=</span> <span class="n">adafruit_dotstar</span><span class="o">.</span><span class="n">DotStar</span><span class="p">(</span><span class="n">board</span><span class="o">.</span><span class="n">APA102_SCK</span><span class="p">,</span> <span class="n">board</span><span class="o">.</span><span class="n">APA102_MOSI</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">vibrationPin</span> <span class="o">=</span> <span class="n">AnalogIn</span><span class="p">(</span><span class="n">board</span><span class="o">.</span><span class="n">A0</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">get_voltage</span><span class="p">(</span><span class="n">pin</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">pin</span><span class="o">.</span><span class="n">value</span> <span class="o">*</span> <span class="mf">3.3</span><span class="p">)</span> <span class="o">/</span> <span class="mi">65536</span>
+
+<span class="c1"># A list of all the states, each uniquely numbered</span>
 <span class="c1"># (not important what the numbers are,</span>
 <span class="c1"># as long as they&#39;re unique)</span>
 <span class="n">OFF</span> <span class="o">=</span> <span class="mi">0</span>
