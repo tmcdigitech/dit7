@@ -1,4 +1,4 @@
 ---
 title: Glossary
-weight: 900
+weight: 100
 ---

@@ -1,5 +1,5 @@
 ---
-title: 7 DigiTech
+title: 7 Digital Tech
 ---
 Welcome to Year 7 Digital Technology!
 

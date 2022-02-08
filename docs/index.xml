@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>7 DigiTech on TMC - 7 Digital Tech</title>
+    <title>7 Digital Tech on TMC - 7 Digital Tech</title>
     <link>https://tmcdigitech.github.io/dit7/</link>
-    <description>Recent content in 7 DigiTech on TMC - 7 Digital Tech</description>
+    <description>Recent content in 7 Digital Tech on TMC - 7 Digital Tech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-au</language><atom:link href="https://tmcdigitech.github.io/dit7/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -138,6 +138,15 @@ https://tmcdigitech.github.io/gemma/</description>
       <guid>https://tmcdigitech.github.io/dit7/gemma/01gettingStarted/fileStructure/</guid>
       <description>When you plug your Gemma in to your computer, it will appear as a USB drive (probably D:, unless you&amp;rsquo;ve got something else already plugged in). If you open the Gemma, you&amp;rsquo;ll see a file called code.py or main.py. This is the file that your Gemma will run. To change the program your Gemma is running, just edit this file!
 D:/ ├── code.py # on newer versions ├── main.py # on older versions │ └── lib/ └── .</description>
+    </item>
+    
+    <item>
+      <title>Task 1 - Algorithms and Coding</title>
+      <link>https://tmcdigitech.github.io/dit7/microbit/tasks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tmcdigitech.github.io/dit7/microbit/tasks/</guid>
+      <description> Sequencing Variables and Lists Iteration and Selection Accelerometer Music Networking  </description>
     </item>
     
     <item>
