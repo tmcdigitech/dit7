@@ -1,5 +1,5 @@
 ---
-title: Activity 1 - Algorithms and Coding
+title: Task 1 - Algorithms and Coding
 ---
 
 You will need to submit your code for each activity to the [hand-in system](http://10.124.229.70:8000/) (only accessible from the school network).
