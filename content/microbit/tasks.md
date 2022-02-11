@@ -4,7 +4,7 @@ title: Task 1 - Algorithms and Coding
 
 You will need to submit your code for each activity to the [hand-in system](http://10.124.229.70:8000/) (only accessible from the school network).
 
-1. [Sequencing](/dit7/files/microbit/01-Sequencing.pptx)
+1. [Sequencing]({{< o365view "Sequencing" "/dit7/files/microbit/01-Sequencing.pptx" >}})
 - Activity 1.1, 1.2, 1.3, 1.4
 
 2. [Variables and Lists](/dit7/files/microbit/02-Variables-and-Lists.pptx)
