@@ -9,4 +9,4 @@ reveal_hugo:
 ---
 Learn about your Gemma here:
 
-<span style="font-size: 110%; color: #ffc000;">`https://tmcdigitech.github.io/gemma/`</span>
+<span style="font-size: 110%; color: #ffc000;">`https://tmcdigitech.github.io/dit7/`</span>
