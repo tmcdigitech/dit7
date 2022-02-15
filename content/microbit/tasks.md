@@ -22,3 +22,9 @@ You will need to submit your code for each activity to the [hand-in system](http
 
 6. [Networking]({{< o365view "/dit7/files/microbit/06-Networking.pptx" >}})\
     Activity 6.1, 6.2, 6.3, 6.4, Extension
+
+{{< hint info >}}
+**Working at home?**
+
+Try the Microbit simulator at [create.withcode.uk](https://create.withcode.uk). Type your code in as usual (including the all important `from microbit import *` line), and then press the big play (▶) button in the bottom right to run it.
+{{< /hint >}}
