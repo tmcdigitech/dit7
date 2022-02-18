@@ -9,7 +9,7 @@ You will need to submit your code for each activity to the [hand-in system](http
 
 2. [Variables and Lists]({{< o365view "/dit7/files/microbit/02-Variables-and-Lists.pptx" >}})\
     Activity 2.1, 2.3, 2.2, 2.4, 2.5\
-    [Image design template]({{< o365view "/dit7/files/microbit/imageTemplate.xlsx" >}})
+    <a href="/dit7/files/microbit/imageTemplate.xlsx" download>Image design template</a>
 
 3. [Iteration and Selection]({{< o365view "/dit7/files/microbit/03-Iteration-and-Selection.pptx" >}})\
     Activity 3.1, 3.2, 3.3, 3.4
