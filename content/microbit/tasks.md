@@ -2,7 +2,7 @@
 title: Task 1 - Algorithms and Coding
 ---
 
-You will need to submit your code for each activity to the [hand-in system](http://10.124.229.70:8000/) (only accessible from the school network).
+You will need to submit your code for each activity to the [hand-in system](http://10.124.229.70:8080/) (only accessible from the school network).
 
 1. [Sequencing]({{< o365view "/dit7/files/microbit/01-Sequencing.pptx" >}})\
     Activity 1.1, 1.2, 1.3, 1.4
