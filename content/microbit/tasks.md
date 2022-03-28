@@ -1,5 +1,6 @@
 ---
 title: Task 1 - Algorithms and Coding
+weight: 1
 ---
 
 You will need to submit your code for each activity to the [hand-in system](http://10.124.229.70:8080/) (only accessible from the school network).
