@@ -10,8 +10,11 @@ Accelerometer
 Activity 4.1, 4.2, 4.3, 4.4, Extension
 Music
 Activity 5.1, 5.2, 5.3, Extension
-Networking</description></item><item><title>Task 3 - Magic 8-ball</title><link>https://tmcdigitech.github.io/dit7/microbit/magic8ball/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit7/microbit/magic8ball/</guid><description>Using the Microbit, make a Magic 8-ball by following steps 1-5 below.
+Networking
+Activity 6.1, 6.2, 6.3, 6.4, Extension
+Working at home?
+Try the Microbit simulator at create.</description></item><item><title>Task 3 - Magic 8-ball</title><link>https://tmcdigitech.github.io/dit7/microbit/magic8ball/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit7/microbit/magic8ball/</guid><description>Using the Microbit, make a Magic 8-ball by following steps 1-5 below.
 Ensure your app is working by carrying out testing and modifying your code. Include comments in your code and hand it in when finished.
 The Magic 8-ball is a fortune telling toy created by Mattel in the 1950s. The concept is simple. Ask the 8-ball a yes or no question and the 8-ball will reply with answers such as “Yes”, “No”, “Without a doubt” etc.</description></item><item><title>Other things to try</title><link>https://tmcdigitech.github.io/dit7/microbit/extras/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tmcdigitech.github.io/dit7/microbit/extras/</guid><description>Light sensor from microbit.org
 from microbit import * while True: if display.read_light_level() &amp;gt; 100: display.show(Image( &amp;#34;90909:&amp;#34; &amp;#34;09990:&amp;#34; &amp;#34;99999:&amp;#34; &amp;#34;09990:&amp;#34; &amp;#34;90909&amp;#34;)) else: display.clear() Max/min temperature recorder *from microbit.org
-from microbit import * currentTemp = temperature() max = currentTemp min = currentTemp while True: display.show(&amp;#39;.&amp;#39;) currentTemp = temperature() if currentTemp &amp;lt; min: min = currentTemp if currentTemp &amp;gt; max: max = currentTemp if button_a.was_pressed(): display.scroll(min) if button_b.</description></item></channel></rss>
+from microbit import * currentTemp = temperature() max = currentTemp min = currentTemp while True: display.show(&amp;#39;.&amp;#39;) currentTemp = temperature() if currentTemp &amp;lt; min: min = currentTemp if currentTemp &amp;gt; max: max = currentTemp if button_a.was_pressed(): display.scroll(min) if button_b.was_pressed(): display.scroll(max) sleep(1000) display.clear() sleep(1000) Teleporting duck from microbit.</description></item></channel></rss>
