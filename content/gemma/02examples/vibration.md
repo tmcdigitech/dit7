@@ -1,5 +1,6 @@
 ---
 title: Vibration Sensor
+weight: 80
 ---
 ```python
 import time

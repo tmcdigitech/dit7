@@ -1,5 +1,6 @@
 ---
-title: Photocell example
+title: Photocell
+weight: 70
 ---
 ```python
 from analogio import AnalogIn, AnalogOut
