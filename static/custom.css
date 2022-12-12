@@ -1,4 +1,7 @@
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Volkhov:wght@400;700&display=swap');
+@import url('//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css');
+
+/* @font-face {
     font-family: 'Cascadia Code';
     src: url('fonts/CascadiaCode.woff2') format('woff2');
     font-style: normal;
@@ -8,22 +11,29 @@
     font-family: 'Cascadia Code';
     src: url('fonts/CascadiaCodeItalic.woff2') format('woff2');
     font-style: italic;
-}
+} */
 
 code, .asciinema-terminal{
-    font-family: 'Cascadia Code', monospace;
+    font-family: 'Hack', monospace;
     /* font-feature-settings: 'calt', 'ss01'; */
-    font-feature-settings: '';
+}
+
+
+
+body {
+    font-family: "Montserrat", sans-serif;
 }
 
 
 
 .gdoc-header{
+    font-family: "Volkhov", serif;
+    font-weight: 700;
     background-color: #02362b;
     border-bottom: 0.3em solid #882635;
 }
 
-:root[color-mode=dark] h1,
+/* :root[color-mode=dark] h1,
 :root[color-mode=dark] h2,
 :root[color-mode=dark] h3,
 :root[color-mode=dark] h4,
@@ -50,4 +60,4 @@ code, .asciinema-terminal{
 }
 :root[color-mode=dark] .wrapper{
     background-color: #282a36;
-}
+} */

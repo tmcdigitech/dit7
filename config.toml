@@ -10,6 +10,9 @@ pygmentsUseClasses = true
 # pygmentsCodeFences = true
 disablePathToLower = true
 
+[params]
+geekdocCollapseAllSections = true
+
 publishDir = "docs"
 
 [outputFormats.Reveal]
